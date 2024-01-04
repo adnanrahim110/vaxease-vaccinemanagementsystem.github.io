@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+        
+body {
+    background: linear-gradient(to bottom right, #261C2C, #3E2C41, #6E85B2);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px0 rgba(0, 0, 0, 0.37);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+h2 {
+    font-weight: 600;
+    color: #6E85B2;
+    font-family: 'Belanosima', sans-serif;
+}
+.text-bolder {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+.btns {
+    position: absolute;
+    width: 200px;
+    position: relative;
+    background: #ffffffde;
+    color: #ffffffde;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 10px 1rem;
+    transition: 0.5s;
+}
+.btns:hover {
+    text-decoration: none;
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25rem;
+    box-shadow: 0 0 35px var(--clr);
+}
+.btns::before {
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    inset: 2px;
+    background-color: #27282c;
+}
+.btns span {
+    position: relative;
+    z-index: 1;
+}
+.btns .border_cut {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.btns .border_cut::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+.btns:hover .border_cut::before {
+    width: 20px;
+    left: 20%;
+}
+.btns .border_cut::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+.btns:hover .border_cut::after {
+    width: 20px;
+    left: 80%;
+}

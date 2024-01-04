@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+
+
+.nav-link-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Webkit browsers */
+table.custom-scrollbar::-webkit-scrollbar {
+    width: 12px !important;
+   }
+   
+   .custom-scrollbar::-webkit-scrollbar-track {
+    background: #F5F5F5;
+   }
+   
+   .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #000000;
+   }
+   
+   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+   }
+   
+   /* Firefox */
+   .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #F5F5F5;
+   }
